@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import datetime
 
-games = nflgame.games(2015)
+games = nflgame.games(2017)
 players = nflgame.combine_game_stats(games)
 runs = pd.Series([p.rushing_yds for p in players.rushing()])
 fig = plt.figure(figsize=(12, 8))

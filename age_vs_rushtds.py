@@ -19,5 +19,5 @@ ax.set_xlabel('rushing_tds')
 
 for p in players.rushing():
     print p, datetime.datetime.now().year - p.birthdate.year
-    #plt.scatter(p.rushing_tds, (datetime.datetime.today().year - p.player.birthdate.year))
-#plt.show()
+    plt.scatter(p.rushing_tds, (datetime.datetime.today().year - p.player.birthdate.year))
+plt.show()
